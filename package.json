@@ -5,7 +5,7 @@
   "license": "AGPL-3.0",
   "author": "Sulka Haro",
   "scripts": {
-    "test": "node headless.js"
+    "test": "nyc --reporter=lcov --reporter=text-summary node headless.js"
   },
   "main": "headless.js",
   "engines": {
@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "jsdom": "^11.11.0",
-    "benv": "^3.3.0"
+    "benv": "^3.3.0",
+    "nyc": "^14.1.1"
   }
 }
